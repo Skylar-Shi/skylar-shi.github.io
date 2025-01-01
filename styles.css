@@ -1,0 +1,241 @@
+/*You can add styles to format your tooltip here*/
+
+.center_plot {
+    margin: auto; 
+    text-align: center;
+}
+
+.section {
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Chalkduster';
+    /* font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';  */
+    color: #64442D;
+}
+
+h3{
+    margin-top: 30px;
+    font-family: 'Chalkduster'; 
+    color: #64442D;
+    font-size: 22px;
+}
+
+h4{
+    margin-top: 30px;
+    font-family: 'Chalkduster'; 
+    color: #64442D;
+}
+
+p.class_indent1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+div.class_indent {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+
+p.interaction_tips {
+    color: #eb95a9;
+    font-family: 'Chalkduster'; 
+    font-style: italic;
+    text-align: center;
+    /* font-family: cursive; */
+}
+
+/* new */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background: #F3D9DD;
+    color: #64442D;
+  }
+  
+  /* Increase the font size of the h1 element */
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .intro {
+    /* to do: flexible padding */
+    padding: 75px;
+    font-size: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+  }
+
+  .introtext{
+    width: 60%;
+    display: inline-block; 
+    text-align: left;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #534749;
+    /* background-color: #333; */
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    font-size: 17px;
+    float: left;
+    display: block;
+    color: #FED7DE;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Chalkduster';
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  /* .navbar a:hover {
+    background-color: #FBE4E4;
+    color: black;
+  } */
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  /* .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  } */
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width:100%;
+    }
+  }
+
+.highlightname {
+    background-color: #F8CFCF;
+    color: black;
+}
+
+.highlight {
+    background-color: #FBE4E4;
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+  }
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+color: #FED7DE;
+background-color: #534749;
+border-radius: 20px;
+outline: none;
+transition: 0.3s;
+font-family: 'Chalkduster';
+}
+
+.button:hover {
+background-color: #FBE4E4;
+color: black;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+/* Style tab links */
+.navbar button{
+  /* background-color: #555; */
+  background-color: #534749;
+  color: #FED7DE;
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  font-size: 17px;
+  width: 10%;
+  font-family: 'Chalkduster';
+  text-align: center;
+  float: right;
+}
+
+.navbar button:hover {
+  background-color: #FBE4E4;
+  color: black;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Intro {background-color: white;}
+#Projects {background-color: white;}
+#More {background-color: white;}
