@@ -13,6 +13,7 @@
     color: #64442D;
 }
 
+
 h3{
     margin-top: 30px;
     font-family: 'Chalkduster'; 
@@ -76,8 +77,28 @@ p.interaction_tips {
     padding: 75px;
     font-size: 20px;
     text-align: center;
-    background: white;
+    background: #F3EBE5;
     color: black;
+  }
+
+  .project_des {
+    /* to do: flexible padding */
+    /* padding: 75px; */
+    font-size: 15px;
+    /* text-align: center; */
+    /* font-family: Arial; */
+    background: #f3ddcc;
+    color: black;
+  }
+
+  .project_intro {
+    /* to do: flexible padding */
+    padding: 75px;
+    font-size: 20px;
+    text-align: center;
+    background: #F3EBE5;
+    color: #64442D;
+    font-family: 'Chalkduster';
   }
 
   .introtext{
@@ -120,6 +141,25 @@ p.interaction_tips {
   .row {  
     display: flex;
     flex-wrap: wrap;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   
   /* Create two unequal columns that sits next to each other */
@@ -167,12 +207,16 @@ p.interaction_tips {
   }
 
 .highlightname {
+    /* background-color: #F8CFCF; */
     background-color: #F8CFCF;
+    /* background-color: #fbc2c2; */
     color: black;
 }
 
 .highlight {
-    background-color: #FBE4E4;
+    background-color: #F8CFCF;
+    /* background-color: #FBE4E4; */
+    /* background-color: plum; */
     color: black;
 }
 
@@ -188,13 +232,16 @@ text-decoration: none;
 color: #FED7DE;
 background-color: #534749;
 border-radius: 20px;
+border: 2px solid #534749;
 outline: none;
 transition: 0.3s;
 font-family: 'Chalkduster';
 }
 
 .button:hover {
-background-color: #FBE4E4;
+/* background-color: #FBE4E4; */
+background-color: #F3EBE5;
+border: 2px solid #534749;
 color: black;
 }
 
@@ -230,12 +277,13 @@ body, html {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: black;
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
 
-#Intro {background-color: white;}
-#Projects {background-color: white;}
-#More {background-color: white;}
+/* #Intro {background-color: #F2E3D8;} */
+#Intro {background-color: #F3EBE5;}
+#Projects {background-color: #F3EBE5;}
+#More {background-color: #F3EBE5;}
