@@ -1,4 +1,9 @@
 /*You can add styles to format your tooltip here*/
+a {
+  color: black;      /* text color */
+  text-decoration: none; /* remove underline */
+  /* font-weight: 500;*/
+} 
 
 .center_plot {
     margin: auto; 
@@ -94,6 +99,7 @@ p.interaction_tips {
   .project_intro {
     /* to do: flexible padding */
     padding: 75px;
+    line-height: 1.6;
     font-size: 20px;
     text-align: center;
     background: #F3EBE5;
@@ -271,8 +277,9 @@ body, html {
 }
 
 .navbar button:hover {
-  background-color: #FBE4E4;
-  color: black;
+  /* background-color: #FBE4E4; */
+  background-color: #534749;
+  color: #FED7DE;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
