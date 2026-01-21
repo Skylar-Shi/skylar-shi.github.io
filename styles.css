@@ -120,7 +120,7 @@ p.interaction_tips {
 
   .introtext{
     width: min(60ch, 100%);
-    display: inline-block;
+    display: inline-block; 
     text-align: left;
   }
   
@@ -135,6 +135,7 @@ p.interaction_tips {
     padding: 0 12px;
     min-height: var(--nav-h);
     flex-wrap: wrap;
+    position: relative;
   }
   
   /* Style the navigation bar links */
@@ -159,6 +160,16 @@ p.interaction_tips {
     align-items: center;
     justify-content: flex-end;
     flex: 1 1 auto;
+  }
+
+  .nav-toggle{
+    display: none;
+    background: transparent;
+    border: none;
+    color: #FED7DE;
+    font-size: 24px;
+    padding: 8px 10px;
+    cursor: pointer;
   }
   
   /* Right-aligned link */
@@ -289,8 +300,8 @@ body, html {
 }
 
 
-/* Style tab links */
-.navbar button{
+/* Style tab links (only the actual tab buttons, not the hamburger) */
+.navbar .tablink{
   /* background-color: #555; */
   background-color: #534749;
   color: #FED7DE;
@@ -306,7 +317,7 @@ body, html {
   white-space: nowrap;
 }
 
-.navbar button:hover {
+.navbar .tablink:hover {
   /* background-color: #FBE4E4; */
   background-color: #534749;
   color: #FED7DE;
@@ -326,13 +337,36 @@ body, html {
 #Projects {background-color: #F3EBE5;}
 #More {background-color: #F3EBE5;}
 
-@media (max-width: 700px){
+@media (max-width: 900px){
   .introtext{
     width: 100%;
   }
+
+  .navbar{
+    flex-wrap: wrap; /* allow dropdown to take its own row and push content down */
+  }
+
+  .nav-toggle{
+    display: block;
+  }
+
   .nav-actions{
+    position: static; /* keep in normal flow so it doesn't cover content */
     width: 100%;
-    justify-content: flex-start;
-    padding-bottom: 8px;
+    background-color: #534749;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0;
+    display: none;
+  }
+
+  .nav-actions.open{
+    display: flex;
+  }
+
+  .nav-actions .tablink{
+    width: 100%;
+    border-radius: 0;
   }
 }

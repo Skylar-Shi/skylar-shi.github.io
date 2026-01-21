@@ -22,5 +22,17 @@ function openPage(pageName, elmnt, color) {
 
 // Wrap the code in a DOMContentLoaded event listener to ensure it runs only after the DOM is fully constructed:
 document.addEventListener("DOMContentLoaded", () => {
+    // Open default tab
     document.getElementById("defaultOpen").click();
+
+    // Mobile nav dropdown toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navActions = document.querySelector(".nav-actions");
+
+    if (navToggle && navActions) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = navActions.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    }
 });
